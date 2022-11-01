@@ -228,8 +228,8 @@ section p{
 /*Mobil*/
 @media screen and (max-width:1030px){
     .sectionheading{
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
     
     .sectionheading h1{
@@ -242,19 +242,14 @@ section p{
     }
 
     section div{
-        width: 90%;
+        width: 100%;
     }
 
     .articlecards_1 div:first-child{
-        width: 90%;
+        width: 100%;
     }
 
     .articlecards_2 div:nth-child(2){
-        width: 90%;
+        width: 100%;
     }
-
-    .agf_tv div{
-        width: 90%;
-    }
-
 }

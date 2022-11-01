@@ -1,0 +1,209 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    }
+
+/* MAIN */
+/* For at der er noget, som headeren kan ses i forhold til. */
+#backgroundimage{ 
+    background-image:url("images/agf.jpeg");
+    background-size:cover;
+    height:500px;
+ }
+
+/* HEADER: */
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:100px;
+    
+    display:flex; /* For at kunne distribuere boksene inden i.*/
+    justify-content:space-around;
+    align-items:center;
+    z-index: 1;
+
+    background-color:darkslategrey;
+    border-bottom:1px solid rgba(255,255,255,0.5); /* Den lille linje i bunden. */
+}
+
+/* Billeder skal fylde 100*% i deres container: 
+Logo og burger */
+#logo > img{
+    width:100%;
+}
+
+#navMobile > a > img{
+    width:100%; 
+}
+
+/* RESPONSIVE: */
+/* MOBIL: */
+@media screen and (max-width:910px){
+    /*Distribuer elementer anderledes:*/
+    header{
+        justify-content:space-between ;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    /* Skjul laptopmenuen. */
+    #navLaptop {
+        display:none; 
+    }
+
+    /* Burgermenuen skal have en bredde */
+    #navMobile{ 
+        width:50px;
+    }
+
+    #logo{ /* Logoet skal være mindre på mobil. */
+        width:80px;
+    }    
+}
+
+/*Laptop*/
+@media screen and (min-width:1030px) {
+    main{
+        margin-left: 166px;
+        margin-right: 166px;
+    }
+
+        /* HEADER: LOGO*/
+        #logo {/* Logoet. Er i en div fordi det spiller bedre med flexbox. */
+            width:200px;
+            margin:30px;
+            position:relative;
+            top:70px;
+        }
+    
+        /* Skjul mobilmenuen.*/
+        #navMobile{
+            display:none;
+        }
+    
+        /* Vis laptopmenuen og samtidig gør den til flex container. */
+        #navLaptop {
+            display:flex; 
+            justify-content:space-around;
+            width:70%;
+            gap:10px;
+        }
+    
+        /* Tekstlinks: */
+        nav > a{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform:uppercase;
+            color:white;
+            text-decoration:none;
+            font-size:15pt;
+            font-weight:bold;
+        }
+}
+
+/*Overskrifter*/
+.sectionheading{
+    margin: 10px;
+}
+
+.sectionheading h1{
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 27pt;
+    padding-bottom: 14px;
+}
+
+/*Artikler cards*/
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+section div{
+    width: 29.5%;
+    height: 380px;
+    margin: 8.3px;
+
+    background-color: cadetblue;
+    border-radius: 15px;
+}
+
+section div:hover{
+    opacity: 0.96;
+}
+
+.articlecards_1 div:first-child{
+    width: 60%;
+    background-color: crimson;
+}
+
+.articlecards_2 div:nth-child(2){
+    width: 60%;
+    background-color: crimson;
+}
+
+/*Artikler cards tekst*/
+section h2{
+    color: white;
+    text-transform: uppercase;
+    opacity: 90%;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+section h1{
+    color: white;
+    text-transform: uppercase;
+    opacity: 90%;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+section p{
+    color: white;
+    opacity: 90%;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+ 
+/*Mobil*/
+@media screen and (max-width:1030px){
+    .sectionheading{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .sectionheading h1{
+        font-size: 16pt;
+    }
+    
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section div{
+        width: 90%;
+    }
+
+    .articlecards_1 div:first-child{
+        width: 90%;
+    }
+
+    .articlecards_2 div:nth-child(2){
+        width: 90%;
+    }
+
+}

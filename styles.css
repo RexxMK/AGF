@@ -4,14 +4,6 @@
     padding:0;
     }
 
-/* MAIN */
-/* For at der er noget, som headeren kan ses i forhold til. */
-#backgroundimage{ 
-    background-image:url("images/agf.jpeg");
-    background-size:cover;
-    height:500px;
- }
-
 /* HEADER: */
 header{
     position:fixed;
@@ -40,7 +32,7 @@ Logo og burger */
 
 /* RESPONSIVE: */
 /* MOBIL: */
-@media screen and (max-width:910px){
+@media screen and (max-width:1030px){
     /*Distribuer elementer anderledes:*/
     header{
         justify-content:space-between ;
@@ -100,6 +92,15 @@ Logo og burger */
             font-size:15pt;
             font-weight:bold;
         }
+}
+
+/* MAIN */
+/* For at der er noget, som headeren kan ses i forhold til. */
+#backgroundimage{ 
+    background-image:url("images/agf.jpeg");
+    background-size:cover;
+    height:800px;
+    margin-bottom: 120px;
 }
 
 /*Overskrifter*/
@@ -177,6 +178,52 @@ section p{
     margin-top: 30px;
 }
 
+/*AGF-TV*/
+.agf_tv{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+    flex-wrap: wrap;
+
+    margin-top: 90px;
+}
+
+.agf_tv div{
+    width: 23%;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.agf_tv img{
+    width: 100%;
+    height: 50%;
+}
+
+.agf_tv p{
+    color: black;
+}
+
+.agf_tv h2{
+    color: black;
+}
+
+/*1280px*/
+@media screen and (max-width:1280px){
+    main{
+        margin-left: 51px;
+        margin-right: 51px;
+    }
+
+    .agf_tv div{
+        width: 47.8%;
+    }
+
+    .agf_tv img{
+        width: 100%;
+        height: 80%;
+    }
+}
+
  
 /*Mobil*/
 @media screen and (max-width:1030px){
@@ -203,6 +250,10 @@ section p{
     }
 
     .articlecards_2 div:nth-child(2){
+        width: 90%;
+    }
+
+    .agf_tv div{
         width: 90%;
     }
 

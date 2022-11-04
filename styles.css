@@ -67,7 +67,9 @@ section div{
 }
 
 section div:hover{
+    transition-duration: 0.5s;
     opacity: 0.93;
+
 }
 
 .articlecards_1 div:first-child{

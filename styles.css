@@ -12,7 +12,6 @@
 .animation{
     animation-name: rollin;
     animation-duration: 2s;
-    
     position: relative;
     z-index: 2;
 }

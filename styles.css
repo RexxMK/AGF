@@ -127,7 +127,6 @@ section div{
     height: 380px;
     margin: 8.3px;
 
-    background-color: cadetblue;
     border-radius: 15px;
 }
 
@@ -137,12 +136,52 @@ section div:hover{
 
 .articlecards_1 div:first-child{
     width: 60%;
-    background-color: crimson;
 }
 
 .articlecards_2 div:nth-child(2){
     width: 60%;
-    background-color: crimson;
+}
+
+#pokalkamp{
+    background-image: url(images/pokalkamp.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#målet{
+    background-image: url(images/måleternær.jpeg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+}
+
+#lyngby{
+    background-image: url(images/lyngby.jpeg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+}
+
+#giftlinks{
+    background-image: url(images/links.jpeg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+}
+
+#futurecup{
+    background-image: url(images/futurecup.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#højdepunkter{
+    background-image: url(images/højdepunkter.jpeg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
 }
 
 /*Artikler cards tekst*/

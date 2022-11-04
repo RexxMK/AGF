@@ -16,7 +16,7 @@ header{
     align-items:center;
     z-index: 1;
 
-    background-color:darkslategrey;
+    background-color:#1f2236;
     border-bottom:1px solid rgba(255,255,255,0.5); /* Den lille linje i bunden. */
 }
 
@@ -81,42 +81,36 @@ section div:hover{
 #pokalkamp{
     background-image: url(images/pokalkamp.jpeg);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #målet{
     background-image: url(images/måleternær.jpeg);
     background-position: center;
-    background-size: 165%;
     background-repeat: no-repeat;
 }
 
 #lyngby{
     background-image: url(images/lyngby.jpeg);
     background-position: center;
-    background-size: 165%;
     background-repeat: no-repeat;
 }
 
 #giftlinks{
     background-image: url(images/links.jpeg);
     background-position: center;
-    background-size: 165%;
     background-repeat: no-repeat;
 }
 
 #futurecup{
     background-image: url(images/futurecup.jpeg);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #højdepunkter{
     background-image: url(images/højdepunkter.jpeg);
     background-position: center;
-    background-size: 165%;
     background-repeat: no-repeat;
 }
 

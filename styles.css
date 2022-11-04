@@ -78,40 +78,34 @@ section div:hover{
     width: 60%;
 }
 
-#pokalkamp{
-    background-image: url(images/pokalkamp.jpeg);
+.articlecards_1 div, .articlecards_2 div{
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#pokalkamp{
+    background-image: url(images/pokalkamp.jpeg);
 }
 
 #målet{
     background-image: url(images/måleternær.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #lyngby{
     background-image: url(images/lyngby.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #giftlinks{
     background-image: url(images/links.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #futurecup{
     background-image: url(images/futurecup.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #højdepunkter{
     background-image: url(images/højdepunkter.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /*Artikler cards tekst*/
